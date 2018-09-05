@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  node-api-typescript:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - 8090:8090
+    environment:
+      - PORT=8090
+      - NODE_ENV=production
