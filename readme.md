@@ -1,5 +1,3 @@
-## Skeleton for Node.js applications written in TypeScript
-
 ### Development
 
 ```bash
@@ -27,5 +25,5 @@ npm run lint
 ### Building a container
 
 ```bash
-docker build .
+docker-compose up -d --build
 ```
